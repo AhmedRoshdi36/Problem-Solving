@@ -1,0 +1,46 @@
+public class Solution {
+    public bool ContainsDuplicate(int[] nums) {
+       Array.Sort(nums);
+       for(int i =0; i <nums.Length-1;i++)
+       {
+        if(nums[i]==nums[i+1]) return true;
+
+       }
+       return false;
+        
+    }
+}
+
+//     --- Brute force--- O(n^2)
+// public class Solution {
+    // public bool ContainsDuplicate(int[] nums) {
+
+//  for(int i =0 ; i<nums.Length;i++)
+//         {
+//             for(int j = 0 ; j < nums.Length;j++)
+//             {
+//                 if(i==j)   continue;
+//                 if(nums[i]==nums[j])
+//                 {
+//                     return true;
+//                 }
+//             }
+           
+//         }
+//   return false;
+//   }
+// }
+
+// much better --- O( NlogN )
+// public class Solution {
+//     public bool ContainsDuplicate(int[] nums) {
+//        Array.Sort(nums);
+//        for(int i =0; i <nums.Length-1;i++)
+//        {
+//         if(nums[i]==nums[i+1]) return true;
+
+//        }
+//        return false;
+        
+//     }
+// }
