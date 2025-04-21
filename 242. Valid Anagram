@@ -1,0 +1,14 @@
+public class Solution {
+    public bool IsAnagram(string s, string t)
+    {
+        char[] _s = s.ToCharArray();
+        char[] _t = t.ToCharArray();
+        Array.Sort(_s);
+        Array.Sort(_t);
+        Console.WriteLine(_s); // Output: abcd
+        string sortedS = new string(_s);
+        string sortedT = new string(_t);
+        return sortedS == sortedT;
+        
+    }
+}
