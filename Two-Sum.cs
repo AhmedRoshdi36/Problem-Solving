@@ -1,7 +1,6 @@
 
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
-        // Create an array of (value, originalIndex) pairs
         var numWithIndices = nums
             .Select((value, index) => new { Value = value, Index = index })
             .OrderBy(x => x.Value)
@@ -13,7 +12,6 @@ public class Solution {
         while (L < R) {
             int sum = numWithIndices[L].Value + numWithIndices[R].Value;
             if (sum == target) {
-                // Return the original indices
                 return new int[] { numWithIndices[L].Index, numWithIndices[R].Index };
             }
             else if (sum < target) {
@@ -24,11 +22,8 @@ public class Solution {
             }
         }
 
-        return new int[] {}; // No solution found
+        return new int[] {}; 
     }
 }
 
      
-// //                       return new int[]{i,j};
-                    
-// //                 }
