@@ -1,6 +1,6 @@
 # 🚀 Problem-Solving
 
-This repository contains my solutions to a wide variety of algorithmic problems from [ROshdiLeetCode](https://leetcode.com/u/AhmedRoshdi36/), implemented to improve my problem-solving, data structures, and programming skills.
+This repository contains my solutions to a wide variety of algorithmic problems from [RoshdiLeetCode](https://leetcode.com/u/AhmedRoshdi36/), implemented to improve my problem-solving, data structures, and programming skills.
 
 ## 🧠 Goals
 
