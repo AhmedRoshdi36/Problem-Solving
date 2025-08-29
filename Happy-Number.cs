@@ -1,16 +1,14 @@
-using System;
-using System.Collections.Generic;
-
 public class Solution {
     public bool IsHappy(int n) {
-        HashSet<int> seen = new HashSet<int>();
+        int slow = n;
+        int fast = GetSumOfSquares(n);
 
-        while (n != 1 && !seen.Contains(n)) {
-            seen.Add(n);
-            n = GetSumOfSquares(n);
+        while (fast != 1 && slow != fast) {
+            slow = GetSumOfSquares(slow);
+            fast = GetSumOfSquares(GetSumOfSquares(fast));
         }
 
-        return n == 1;
+        return fast == 1;
     }
 
     private int GetSumOfSquares(int n) {
